@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2020 at 10:41 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.33
+-- Generation Time: May 12, 2022 at 04:33 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -90,10 +90,11 @@ CREATE TABLE `room_categories` (
 --
 
 INSERT INTO `room_categories` (`id`, `name`, `price`, `cover_img`) VALUES
-(2, 'Deluxe Room', 500, '1600480260_4.jpg'),
-(3, 'Single Room', 120, '1600480680_2.jpg'),
-(4, 'Family Room', 350, '1600480680_room-1.jpg'),
-(6, 'Twin Bed Room', 200, '1600482780_3.jpg');
+(2, 'President Room', 1500000, '1652350860_duke-suite-mulia.jpg'),
+(3, 'Single Room', 200000, '1600480680_2.jpg'),
+(4, 'Family Room', 450000, '1600480680_room-1.jpg'),
+(6, 'Twin Bed Room', 375000, '1652350980_1652350680_2.jpg'),
+(7, 'Deluxe Room', 550, '1652350920_Grand-Deluxe-King-Bed-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -115,7 +116,7 @@ CREATE TABLE `system_settings` (
 --
 
 INSERT INTO `system_settings` (`id`, `hotel_name`, `email`, `contact`, `cover_img`, `about_content`) VALUES
-(1, 'Hotel Management System', 'info@sample.com', '+6948 8542 623', '1600478940_hotel-cover.jpg', '&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;ABOUT US&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;b style=&quot;margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; text-align: justify;&quot;&gt;Lorem Ipsum&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#x2019;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;h2 style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;Where does it come from?&lt;/h2&gt;&lt;p style=&quot;text-align: center; margin-bottom: 15px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400;&quot;&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.&lt;/p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;');
+(1, 'KELOMPOK 42 HOTEL', 'kelompok42@rpl.com', '+622042', '1652359560_1600478880_hotel-cover.jpg', '&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;b&gt;&lt;span style=&quot;background: transparent; position: relative;&quot;&gt;&lt;font color=&quot;#000000&quot; face=&quot;Open Sans, Arial, sans-serif&quot; style=&quot;background: transparent; position: relative;&quot;&gt;Program ini merupakan sebuah program Pemesanan Hotel.Program ini dibuat sebagai tugas akhir Praktikum Rekayasa Perangkat Lunak 2022 Jurusan Teknik Komputer&amp;nbsp;&lt;/font&gt;&lt;/span&gt;Fakultas Teknik Universitas Diponegoro,Program ini dibuat oleh kelompok 42&amp;nbsp;&lt;span style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;Praktikum Rekayasa Perangkat Lunak yang beranggotakan :&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span lang=&quot;IN&quot; style=&quot;mso-bidi-font-size:12.0pt;line-height:150%;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-ansi-language:IN&quot;&gt;&lt;b style=&quot;mso-bidi-font-size:12.0pt;line-height:150%;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;;mso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-ansi-language:IN&quot;&gt;Foresto Andrean Yudha / 21120120120004&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Indria Wulandari Sihotang / 21120120120013&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Muhammad Baihaqi Asshaumi Muntaqo / 21120120140156&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Muhammad Hafizh Zikry / 21120120120034&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Rosyad Shidqi Dikpimmas / 21120120140161&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fariz Wildan Meiawan / 21120120130074&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;/p&gt;&lt;h2 style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;br&gt;&lt;/h2&gt;&lt;p&gt;&lt;/p&gt;');
 
 -- --------------------------------------------------------
 
@@ -192,7 +193,7 @@ ALTER TABLE `rooms`
 -- AUTO_INCREMENT for table `room_categories`
 --
 ALTER TABLE `room_categories`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `system_settings`
