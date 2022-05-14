@@ -43,7 +43,7 @@
                 	while($row = $qry->fetch_assoc()):
                 	?>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="#">
+                        <a class="portfolio-box" href="index.php?page=list">
                             <img class="img-fluid" src="assets/img/<?php echo $row['cover_img'] ?>" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-30"><?php echo "Rp ".number_format($row['price'],2) ?> per hari</div>
